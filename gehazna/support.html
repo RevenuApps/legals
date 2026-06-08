@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gehazna · Support / الدعم</title>
+  <style>
+    :root { --primary: #8B5E7E; --bg: #F8F9FA; --text: #1A1A2E; --muted: #6b7280; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, "Segoe UI", Tahoma, Arial, sans-serif; line-height: 1.8; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+    header { display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+    h1 { font-size: 1.6rem; margin: 16px 0 4px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 6px; color: var(--primary); }
+    .card { background: #fff; border-radius: 14px; padding: 22px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+    .toggle { display: inline-flex; border: 1px solid var(--primary); border-radius: 999px; overflow: hidden; }
+    .toggle button { border: 0; background: #fff; color: var(--primary); padding: 7px 16px;
+      font-size: .9rem; cursor: pointer; font-family: inherit; }
+    .toggle button.active { background: var(--primary); color: #fff; }
+    a { color: var(--primary); }
+    .mail-btn { display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 12px;
+      background: var(--primary); color: #fff; text-decoration: none; font-weight: 600; }
+    .mail-btn:hover { opacity: .9; }
+    [lang-block="en"] { display: none; }
+    body.show-en [lang-block="ar"] { display: none; }
+    body.show-en [lang-block="en"] { display: block; }
+    footer { margin-top: 32px; color: var(--muted); font-size: .85rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <strong>Gehazna · جهازنا</strong>
+      <div class="toggle">
+        <button id="btn-ar" class="active" onclick="setLang('ar')">العربية</button>
+        <button id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- ========== ARABIC ========== -->
+    <div lang-block="ar" dir="rtl">
+      <h1>الدعم والمساعدة</h1>
+      <div class="card">
+        <p>هل تحتاجين مساعدة في استخدام تطبيق "جهازنا"؟ نحن هنا لمساعدتك.</p>
+
+        <h2>تواصلي معنا</h2>
+        <p>لأي سؤال أو مشكلة أو اقتراح، راسلينا عبر البريد الإلكتروني وسنرد عليكِ في أقرب وقت:</p>
+        <p><a class="mail-btn" href="mailto:yoseffmohamed001@gmail.com?subject=دعم تطبيق جهازنا">راسلينا عبر البريد</a></p>
+        <p>البريد الإلكتروني: <a href="mailto:yoseffmohamed001@gmail.com">yoseffmohamed001@gmail.com</a></p>
+
+        <h2>أسئلة شائعة</h2>
+        <p><strong>كيف أضيف منتجًا إلى قائمتي؟</strong><br>
+        افتحي قسم الكتالوج، اختاري الفئة، ثم أضيفي المنتجات التي تريدينها إلى قائمة الاحتياجات.</p>
+        <p><strong>كيف أسجّل عملية شراء؟</strong><br>
+        من قائمة الاحتياجات اضغطي على المنتج لتحريكه إلى المشتريات مع إمكانية إضافة السعر والكمية.</p>
+        <p><strong>هل بياناتي محفوظة؟</strong><br>
+        نعم، تُحفظ قائمتك ومشترياتك على جهازك. لمزيد من التفاصيل راجعي
+        <a href="privacy-policy.html">سياسة الخصوصية</a>.</p>
+      </div>
+    </div>
+
+    <!-- ========== ENGLISH ========== -->
+    <div lang-block="en" dir="ltr" style="text-align:left">
+      <h1>Support &amp; Help</h1>
+      <div class="card">
+        <p>Need help using the "Gehazna" app? We're here to help.</p>
+
+        <h2>Contact us</h2>
+        <p>For any question, issue, or suggestion, email us and we'll get back to you as soon as possible:</p>
+        <p><a class="mail-btn" href="mailto:yoseffmohamed001@gmail.com?subject=Gehazna App Support">Email Support</a></p>
+        <p>Email: <a href="mailto:yoseffmohamed001@gmail.com">yoseffmohamed001@gmail.com</a></p>
+
+        <h2>Frequently asked questions</h2>
+        <p><strong>How do I add a product to my list?</strong><br>
+        Open the catalog, choose a category, then add the products you want to your needs list.</p>
+        <p><strong>How do I record a purchase?</strong><br>
+        From the needs list, tap an item to move it to purchased, where you can add price and quantity.</p>
+        <p><strong>Is my data saved?</strong><br>
+        Yes, your list and purchases are stored on your device. For details see the
+        <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      </div>
+    </div>
+
+    <footer>
+      <a href="index.html">Gehazna · جهازنا</a> ·
+      <a href="privacy-policy.html">Privacy / الخصوصية</a> ·
+      <a href="terms.html">Terms / الشروط</a>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(l) {
+      document.body.classList.toggle('show-en', l === 'en');
+      document.documentElement.lang = l;
+      document.documentElement.dir = l === 'en' ? 'ltr' : 'rtl';
+      document.getElementById('btn-ar').classList.toggle('active', l === 'ar');
+      document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    }
+    if ((navigator.language || '').startsWith('en')) setLang('en');
+  </script>
+</body>
+</html>
