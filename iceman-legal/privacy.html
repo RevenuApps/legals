@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iceman — سياسة الخصوصية / Privacy Policy</title>
+  <meta name="description" content="سياسة الخصوصية للعبة Iceman (رجل الثلج). Privacy Policy for the Iceman game. Contact: apps@nafes.net" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-0: #1a1424;
+      --panel: #3a2f4a;
+      --edge: #5a4a72;
+      --violet: #8b5cf6;
+      --pink: #ec4899;
+      --cyan: #38bdf8;
+      --gold: #fbbf24;
+      --text: #f5f2fb;
+      --muted: #b6a9cf;
+      --radius: 20px;
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Cairo', 'Poppins', system-ui, sans-serif;
+      background: radial-gradient(1200px 700px at 80% -10%, #3a2f4a 0%, transparent 55%),
+                  radial-gradient(1000px 600px at 0% 20%, #2a1f3f 0%, transparent 50%),
+                  linear-gradient(180deg, var(--bg-0), #120d1a);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.75;
+      padding: 0 20px 60px;
+    }
+    body[dir="ltr"] { font-family: 'Poppins', 'Cairo', system-ui, sans-serif; }
+    .wrap { max-width: 820px; margin: 0 auto; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 0; gap: 14px; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 20px; }
+    .brand img { width: 42px; height: 42px; border-radius: 12px; box-shadow: 0 6px 18px rgba(139,92,246,.5); }
+    .lang-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(139,92,246,.16); color: var(--text);
+      border: 1px solid rgba(139,92,246,.35);
+      padding: 9px 15px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-weight: 700; font-size: 14px; transition: .2s;
+    }
+    .lang-btn:hover { background: rgba(139,92,246,.3); transform: translateY(-1px); }
+
+    .card {
+      background: linear-gradient(180deg, rgba(58,47,74,.6), rgba(36,28,48,.6));
+      border: 1px solid rgba(139,92,246,.2);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px 30px;
+      margin-top: 10px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px); font-weight: 900; line-height: 1.15;
+      background: linear-gradient(120deg, #fff 10%, #c4b5fd 50%, #f0abfc 90%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    .updated { color: var(--muted); font-size: 14.5px; margin-bottom: 24px; }
+    h2 {
+      font-size: 20px; font-weight: 800; margin: 30px 0 10px;
+      color: var(--text); display: flex; align-items: center; gap: 9px;
+    }
+    p, li { color: var(--muted); font-size: 16px; }
+    ul { padding-inline-start: 22px; margin: 10px 0; }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text); }
+    a { color: var(--cyan); text-decoration: none; font-weight: 700; }
+    a:hover { text-decoration: underline; }
+
+    .contact-box {
+      margin-top: 26px; padding: 22px;
+      background: linear-gradient(90deg, rgba(236,72,153,.12), rgba(139,92,246,.12));
+      border: 1px solid rgba(236,72,153,.3);
+      border-radius: 16px; text-align: center;
+    }
+    .contact-box .label { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+    .email-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(180deg, var(--violet), #6d3fd6);
+      color: #fff; font-weight: 800; font-size: 18px;
+      padding: 13px 26px; border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(139,92,246,.4); transition: .2s;
+    }
+    .email-btn:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 14px 36px rgba(139,92,246,.55); }
+
+    footer { text-align: center; color: var(--muted); font-size: 13.5px; margin-top: 34px; opacity: .8; }
+    footer a { color: var(--muted); }
+
+    .en { display: none; }
+    body[dir="ltr"] .ar { display: none; }
+    body[dir="ltr"] .en { display: initial; }
+    body[dir="ltr"] .card.ar { display: none; }
+  </style>
+</head>
+<body dir="rtl">
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="assets/icon.png" alt="Iceman" onerror="this.style.display='none'" />
+        <span>Iceman</span>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">🌐 <span id="langLabel">English</span></button>
+    </header>
+
+    <!-- ============ ARABIC ============ -->
+    <div class="card ar">
+      <h1>سياسة الخصوصية</h1>
+      <div class="updated">لعبة Iceman (رجل الثلج) · آخر تحديث: يوليو 2026</div>
+
+      <p>نحترم خصوصيتك. توضّح هذه السياسة أنواع البيانات التي يجمعها تطبيق <strong>Iceman</strong> وكيفية استخدامها وحمايتها. باستخدامك للّعبة فإنك توافق على ما ورد في هذه السياسة.</p>
+
+      <h2>1️⃣ البيانات التي نجمعها</h2>
+      <p>صُمّمت اللعبة لتجمع أقل قدر ممكن من البيانات. نحن <strong>لا نطلب منك التسجيل باسمك الحقيقي ولا بريدك ولا رقم هاتفك</strong>. البيانات التي قد تُجمع:</p>
+      <ul>
+        <li><strong>معرّف مجهول (Anonymous ID):</strong> عند أول تشغيل يتم إنشاء معرّف مجهول تلقائياً عبر Firebase لربط نتيجتك بلوحة الشرف — دون أي معلومات شخصية.</li>
+        <li><strong>بيانات لوحة الشرف:</strong> إذا اخترت الظهور في لوحة الشرف العالمية، نحفظ <strong>الاسم المستعار الذي تكتبه</strong>، و<strong>الدولة التي تختارها</strong>، و<strong>أعلى نتيجة لك</strong>. هذه البيانات اختيارية وتظهر للاعبين الآخرين.</li>
+        <li><strong>بيانات محفوظة على جهازك:</strong> تقدّمك، جواهرك، إعداداتك، وأعلى نتيجة تُحفظ محلياً على جهازك فقط.</li>
+        <li><strong>بيانات الإعلانات والتحليلات:</strong> تجمعها خدمات الطرف الثالث (مثل Google AdMob) تلقائياً — كمعرّف الإعلان (Advertising ID) وبيانات تقنية عن الجهاز — لعرض الإعلانات.</li>
+        <li><strong>بيانات المشتريات:</strong> عند شرائك داخل التطبيق، تُعالج عملية الدفع عبر متجر آبل / جوجل وخدمة RevenueCat. نحن <strong>لا نرى ولا نخزّن بيانات بطاقتك البنكية</strong>.</li>
+      </ul>
+
+      <h2>2️⃣ الأذونات والاستشعار</h2>
+      <p>إذا اخترت نظام التحكم بالإمالة (Tilt)، تستخدم اللعبة مستشعر التسارع (Accelerometer) داخل الجهاز فقط لتحريك الشخصية. <strong>لا تُرسَل بيانات المستشعر إلى أي خادم ولا تُخزَّن.</strong></p>
+
+      <h2>3️⃣ كيف نستخدم البيانات</h2>
+      <ul>
+        <li>لتشغيل لوحة الشرف العالمية وعرض ترتيبك.</li>
+        <li>لحفظ تقدّمك وإعداداتك على جهازك.</li>
+        <li>لعرض الإعلانات ودعم استمرار اللعبة مجاناً.</li>
+        <li>لمعالجة المشتريات داخل التطبيق (إزالة الإعلانات وغيرها).</li>
+      </ul>
+
+      <h2>4️⃣ خدمات الطرف الثالث</h2>
+      <p>تعتمد اللعبة على خدمات موثوقة، لكلٍّ منها سياسة خصوصية خاصة:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (مصادقة مجهولة + قاعدة بيانات لوحة الشرف)</li>
+        <li><strong>Google AdMob</strong> (الإعلانات) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>RevenueCat</strong> (إدارة المشتريات) — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+        <li><strong>Apple App Store / Google Play</strong> (معالجة الدفع)</li>
+      </ul>
+
+      <h2>5️⃣ خصوصية الأطفال</h2>
+      <p>اللعبة مناسبة لجميع الأعمار ولا نجمع عمداً أي معلومات تعريفية شخصية من الأطفال. إذا كنت وليّ أمر وتعتقد أن طفلك زوّدنا ببيانات، راسلنا لحذفها.</p>
+
+      <h2>6️⃣ أمان البيانات والاحتفاظ بها</h2>
+      <p>نتّخذ إجراءات معقولة لحماية البيانات. تُحفظ بيانات لوحة الشرف طالما بقيت نتيجتك ظاهرة، ويمكنك طلب حذفها في أي وقت عبر مراسلتنا.</p>
+
+      <h2>7️⃣ حقوقك</h2>
+      <p>يمكنك طلب حذف بيانات لوحة الشرف الخاصة بك، أو الاستفسار عن بياناتك، بمراسلتنا على البريد أدناه. كما يمكنك حذف كل البيانات المحلية بإلغاء تثبيت اللعبة.</p>
+
+      <h2>8️⃣ تعديلات على السياسة</h2>
+      <p>قد نُحدّث هذه السياسة من وقت لآخر، وسننشر أي تغييرات على هذه الصفحة مع تحديث التاريخ أعلاه.</p>
+
+      <h2>9️⃣ تواصل معنا</h2>
+      <p>لأي سؤال حول الخصوصية أو لطلب حذف بياناتك:</p>
+      <div class="contact-box">
+        <div class="label">راسلنا على</div>
+        <a class="email-btn" href="mailto:apps@nafes.net?subject=خصوصية%20Iceman">✉️ apps@nafes.net</a>
+      </div>
+
+      <footer>
+        © 2026 Nafes — جميع الحقوق محفوظة · <a href="support.html">الدعم</a>
+      </footer>
+    </div>
+
+    <!-- ============ ENGLISH ============ -->
+    <div class="card en">
+      <h1>Privacy Policy</h1>
+      <div class="updated">Iceman game · Last updated: July 2026</div>
+
+      <p>We respect your privacy. This policy explains what data the <strong>Iceman</strong> app collects, and how it is used and protected. By using the game, you agree to this policy.</p>
+
+      <h2>1️⃣ Data we collect</h2>
+      <p>The game is designed to collect as little data as possible. We <strong>never ask for your real name, email, or phone number</strong>. The data that may be collected:</p>
+      <ul>
+        <li><strong>Anonymous ID:</strong> On first launch, an anonymous ID is created automatically via Firebase to link your score to the leaderboard — with no personal information.</li>
+        <li><strong>Leaderboard data:</strong> If you choose to appear on the global leaderboard, we store the <strong>nickname you type</strong>, the <strong>country you select</strong>, and your <strong>high score</strong>. This is optional and visible to other players.</li>
+        <li><strong>Data stored on your device:</strong> Your progress, gems, settings, and high score are saved locally on your device only.</li>
+        <li><strong>Ads &amp; analytics data:</strong> Collected automatically by third-party services (e.g. Google AdMob) — such as your Advertising ID and technical device data — to display ads.</li>
+        <li><strong>Purchase data:</strong> When you make an in-app purchase, payment is processed by the Apple / Google store and RevenueCat. We <strong>never see or store your card details</strong>.</li>
+      </ul>
+
+      <h2>2️⃣ Permissions &amp; sensors</h2>
+      <p>If you choose the Tilt control scheme, the game uses your device's accelerometer <strong>on-device only</strong> to move the character. <strong>Sensor data is never sent to any server or stored.</strong></p>
+
+      <h2>3️⃣ How we use data</h2>
+      <ul>
+        <li>To run the global leaderboard and show your rank.</li>
+        <li>To save your progress and settings on your device.</li>
+        <li>To show ads and keep the game free.</li>
+        <li>To process in-app purchases (such as removing ads).</li>
+      </ul>
+
+      <h2>4️⃣ Third-party services</h2>
+      <p>The game relies on trusted services, each with its own privacy policy:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (anonymous auth + leaderboard database)</li>
+        <li><strong>Google AdMob</strong> (ads) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>RevenueCat</strong> (purchase management) — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+        <li><strong>Apple App Store / Google Play</strong> (payment processing)</li>
+      </ul>
+
+      <h2>5️⃣ Children's privacy</h2>
+      <p>The game is suitable for all ages, and we do not knowingly collect personally identifiable information from children. If you are a parent and believe your child provided us data, contact us to delete it.</p>
+
+      <h2>6️⃣ Data security &amp; retention</h2>
+      <p>We take reasonable measures to protect data. Leaderboard data is kept while your score remains listed, and you may request its deletion at any time by contacting us.</p>
+
+      <h2>7️⃣ Your rights</h2>
+      <p>You can request deletion of your leaderboard data, or ask about your data, by emailing us at the address below. You can also delete all local data by uninstalling the game.</p>
+
+      <h2>8️⃣ Changes to this policy</h2>
+      <p>We may update this policy from time to time. Any changes will be posted on this page with an updated date above.</p>
+
+      <h2>9️⃣ Contact us</h2>
+      <p>For any privacy question or to request deletion of your data:</p>
+      <div class="contact-box">
+        <div class="label">Email us at</div>
+        <a class="email-btn" href="mailto:apps@nafes.net?subject=Iceman%20Privacy">✉️ apps@nafes.net</a>
+      </div>
+
+      <footer>
+        © 2026 Nafes — All rights reserved · <a href="support.html">Support</a>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function toggleLang() {
+      const isAr = document.body.getAttribute('dir') === 'rtl';
+      if (isAr) {
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+        document.getElementById('langLabel').textContent = 'العربية';
+      } else {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+        document.getElementById('langLabel').textContent = 'English';
+      }
+      try { localStorage.setItem('iceman_lang', isAr ? 'en' : 'ar'); } catch (e) {}
+    }
+    try {
+      if (localStorage.getItem('iceman_lang') === 'en') toggleLang();
+    } catch (e) {}
+  </script>
+</body>
+</html>

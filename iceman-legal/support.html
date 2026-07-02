@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iceman — الدعم / Support</title>
+  <meta name="description" content="صفحة دعم لعبة Iceman (رجل الثلج). للتواصل والمساعدة راسلنا على apps@nafes.net — Support & help for the Iceman game." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-0: #1a1424;
+      --panel: #3a2f4a;
+      --panel-2: #4a3b5e;
+      --edge: #5a4a72;
+      --violet: #8b5cf6;
+      --pink: #ec4899;
+      --cyan: #38bdf8;
+      --gold: #fbbf24;
+      --text: #f5f2fb;
+      --muted: #b6a9cf;
+      --radius: 20px;
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Cairo', 'Poppins', system-ui, sans-serif;
+      background: radial-gradient(1200px 700px at 80% -10%, #3a2f4a 0%, transparent 55%),
+                  radial-gradient(1000px 600px at 0% 20%, #2a1f3f 0%, transparent 50%),
+                  linear-gradient(180deg, var(--bg-0), #120d1a);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+      padding: 0 20px 60px;
+    }
+    body[dir="ltr"] { font-family: 'Poppins', 'Cairo', system-ui, sans-serif; }
+    .wrap { max-width: 780px; margin: 0 auto; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 0; gap: 14px; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 20px; }
+    .brand img { width: 42px; height: 42px; border-radius: 12px; box-shadow: 0 6px 18px rgba(139,92,246,.5); }
+    .lang-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(139,92,246,.16); color: var(--text);
+      border: 1px solid rgba(139,92,246,.35);
+      padding: 9px 15px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-weight: 700; font-size: 14px; transition: .2s;
+    }
+    .lang-btn:hover { background: rgba(139,92,246,.3); transform: translateY(-1px); }
+
+    .card {
+      background: linear-gradient(180deg, rgba(58,47,74,.6), rgba(36,28,48,.6));
+      border: 1px solid rgba(139,92,246,.2);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px 30px;
+      margin-top: 10px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px); font-weight: 900; line-height: 1.15;
+      background: linear-gradient(120deg, #fff 10%, #c4b5fd 50%, #f0abfc 90%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    .sub { color: var(--cyan); font-weight: 800; margin-bottom: 26px; font-size: 17px; }
+    h2 {
+      font-size: 20px; font-weight: 800; margin: 28px 0 10px;
+      color: var(--text); display: flex; align-items: center; gap: 9px;
+    }
+    p, li { color: var(--muted); font-size: 16px; }
+    ul { padding-inline-start: 22px; margin: 8px 0; }
+    li { margin-bottom: 7px; }
+    a { color: var(--cyan); text-decoration: none; font-weight: 700; }
+    a:hover { text-decoration: underline; }
+
+    .contact-box {
+      margin-top: 26px; padding: 22px;
+      background: linear-gradient(90deg, rgba(236,72,153,.12), rgba(139,92,246,.12));
+      border: 1px solid rgba(236,72,153,.3);
+      border-radius: 16px; text-align: center;
+    }
+    .contact-box .label { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+    .email-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(180deg, var(--violet), #6d3fd6);
+      color: #fff; font-weight: 800; font-size: 18px;
+      padding: 13px 26px; border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(139,92,246,.4); transition: .2s;
+    }
+    .email-btn:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 14px 36px rgba(139,92,246,.55); }
+
+    .faq-item { border-top: 1px solid rgba(139,92,246,.15); padding: 16px 0; }
+    .faq-item:first-of-type { border-top: none; }
+    .faq-q { font-weight: 800; color: var(--text); margin-bottom: 6px; }
+
+    footer { text-align: center; color: var(--muted); font-size: 13.5px; margin-top: 34px; opacity: .8; }
+    footer a { color: var(--muted); }
+
+    .en { display: none; }
+    body[dir="ltr"] .ar { display: none; }
+    body[dir="ltr"] .en { display: initial; }
+    body[dir="ltr"] ul.ar, body[dir="ltr"] .card.ar { display: none; }
+  </style>
+</head>
+<body dir="rtl">
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="assets/icon.png" alt="Iceman" onerror="this.style.display='none'" />
+        <span>Iceman</span>
+      </div>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">🌐 <span id="langLabel">English</span></button>
+    </header>
+
+    <!-- ============ ARABIC ============ -->
+    <div class="card ar">
+      <h1>الدعم والمساعدة</h1>
+      <div class="sub">Iceman — رجل الثلج ❄️</div>
+      <p>يسعدنا مساعدتك! لو واجهتك أي مشكلة، عندك اقتراح، أو عايز تبلّغ عن خطأ في اللعبة — إحنا موجودين.</p>
+
+      <h2>📮 تواصل معنا</h2>
+      <p>أسرع طريقة للدعم هي مراسلتنا عبر البريد الإلكتروني. بنرد عادةً خلال <strong>24–48 ساعة</strong>.</p>
+
+      <div class="contact-box">
+        <div class="label">راسلنا على البريد الإلكتروني</div>
+        <a class="email-btn" href="mailto:apps@nafes.net?subject=دعم%20لعبة%20Iceman">✉️ apps@nafes.net</a>
+      </div>
+
+      <h2>❓ الأسئلة الشائعة</h2>
+      <div class="faq-item">
+        <div class="faq-q">كيف ألعب؟</div>
+        <p>اركض يمين ويسار وانطّ لأعلى المنصّات. كل ما ركضت أسرع، نطّيت أعلى. عدّي أكثر من طابق بقفزة وحدة عشان تعمل كومبو ونقاط مضاعفة.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">فقدت جواهري أو تقدّمي؟</div>
+        <p>تقدّمك وجواهرك محفوظة على جهازك. راسلنا على <a href="mailto:apps@nafes.net">apps@nafes.net</a> ووضّح المشكلة وسنساعدك.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">كيف أفتح شخصيات جديدة؟</div>
+        <p>اجمع الجواهر أثناء اللعب واصرفها في المتجر لفتح شخصيات جليدية وشخصيات نجوم جديدة.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">عندي مشكلة في عملية شراء؟</div>
+        <p>راسلنا على <a href="mailto:apps@nafes.net">apps@nafes.net</a> مع تفاصيل العملية وسنعالجها في أسرع وقت.</p>
+      </div>
+
+      <footer>
+        © 2026 Nafes — جميع الحقوق محفوظة · <a href="privacy.html">سياسة الخصوصية</a>
+      </footer>
+    </div>
+
+    <!-- ============ ENGLISH ============ -->
+    <div class="card en">
+      <h1>Support &amp; Help</h1>
+      <div class="sub">Iceman ❄️</div>
+      <p>We're happy to help! If you hit any issue, have a suggestion, or want to report a bug — we're here for you.</p>
+
+      <h2>📮 Contact us</h2>
+      <p>The fastest way to get support is by email. We usually reply within <strong>24–48 hours</strong>.</p>
+
+      <div class="contact-box">
+        <div class="label">Email us at</div>
+        <a class="email-btn" href="mailto:apps@nafes.net?subject=Iceman%20Support">✉️ apps@nafes.net</a>
+      </div>
+
+      <h2>❓ Frequently asked questions</h2>
+      <div class="faq-item">
+        <div class="faq-q">How do I play?</div>
+        <p>Run left and right and jump up the platforms. The faster you run, the higher you jump. Clear more than one floor in a single leap to build a combo and multiply your points.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I lost my gems or progress?</div>
+        <p>Your progress and gems are saved on your device. Email us at <a href="mailto:apps@nafes.net">apps@nafes.net</a> describing the issue and we'll help.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I unlock new characters?</div>
+        <p>Collect gems while you play and spend them in the shop to unlock new icy heroes and star characters.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I have a problem with a purchase?</div>
+        <p>Email us at <a href="mailto:apps@nafes.net">apps@nafes.net</a> with the purchase details and we'll sort it out as fast as we can.</p>
+      </div>
+
+      <footer>
+        © 2026 Nafes — All rights reserved · <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function toggleLang() {
+      const isAr = document.body.getAttribute('dir') === 'rtl';
+      if (isAr) {
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+        document.getElementById('langLabel').textContent = 'العربية';
+      } else {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+        document.getElementById('langLabel').textContent = 'English';
+      }
+      try { localStorage.setItem('iceman_lang', isAr ? 'en' : 'ar'); } catch (e) {}
+    }
+    // Restore saved language.
+    try {
+      if (localStorage.getItem('iceman_lang') === 'en') toggleLang();
+    } catch (e) {}
+  </script>
+</body>
+</html>
