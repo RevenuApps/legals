@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroAI · Water reminders / تذكير بشرب الماء</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" data-page="index.html" href="index.html"><img src="assets/icon.png" alt="HydroAI" />HydroAI</a>
+      <div class="toggle">
+        <button id="btn-ar" onclick="setLang('ar')">العربية</button>
+        <button id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <div lang-block="ar" dir="rtl">
+      <div class="hero">
+        <img src="assets/icon.png" alt="HydroAI" />
+        <h1>HydroAI</h1>
+        <p>اشرب الماء في موعده. المنبّه لا يتوقف حتى تشرب.</p>
+      </div>
+      <div class="links">
+        <a data-page="about.html" href="about.html">من نحن <span>‹</span></a>
+        <a data-page="privacy-policy.html" href="privacy-policy.html">سياسة الخصوصية <span>‹</span></a>
+        <a data-page="terms.html" href="terms.html">الشروط والأحكام <span>‹</span></a>
+        <a data-page="support.html" href="support.html">الدعم والمساعدة <span>‹</span></a>
+      </div>
+    </div>
+
+    <div lang-block="en" dir="ltr" style="text-align:left">
+      <div class="hero">
+        <img src="assets/icon.png" alt="HydroAI" />
+        <h1>HydroAI</h1>
+        <p>Drink water on time. The alarm doesn't stop until you do.</p>
+      </div>
+      <div class="links">
+        <a data-page="about.html" href="about.html">About us <span>›</span></a>
+        <a data-page="privacy-policy.html" href="privacy-policy.html">Privacy Policy <span>›</span></a>
+        <a data-page="terms.html" href="terms.html">Terms &amp; Conditions <span>›</span></a>
+        <a data-page="support.html" href="support.html">Support <span>›</span></a>
+      </div>
+    </div>
+
+    <footer>
+      <a data-page="index.html" href="index.html">HydroAI</a> ·
+      <a data-page="about.html" href="about.html">من نحن / About us</a> ·
+      <a data-page="privacy-policy.html" href="privacy-policy.html">الخصوصية / Privacy</a> ·
+      <a data-page="terms.html" href="terms.html">الشروط / Terms</a> ·
+      <a data-page="support.html" href="support.html">الدعم / Support</a>
+      <br />© NAFES
+    </footer>
+  </div>
+  <script src="assets/page.js"></script>
+</body>
+</html>
