@@ -60,8 +60,8 @@ li { margin: 4px 0; }
 .btn:hover { opacity: .92; }
 .faq p { margin: 0 0 14px; }
 .note { background: var(--tint); border-radius: 12px; padding: 12px 16px; margin: 14px 0 0; }
-[lang-block="en"] { display: none; }
-body.show-en [lang-block="ar"] { display: none; }
-body.show-en [lang-block="en"] { display: block; }
+[lang-block] { display: none; }
+.toggle.pick { padding: 0; }
+.toggle select { border: 0; background: transparent; color: var(--primary); padding: 7px 14px; font-size: .9rem; font-family: inherit; font-weight: 700; cursor: pointer; }
 footer { margin-top: 34px; color: var(--muted); font-size: .88rem; text-align: center; line-height: 2; }
 footer a { color: var(--muted); }
